@@ -20,4 +20,8 @@ public:
 
 	// Changes the value of the imaginary part of the complex number
 	void setImag(double imag);
+
+	// Prints the complex number
+	void show_compl() const;
+
 };
