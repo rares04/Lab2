@@ -1,5 +1,5 @@
 #pragma once
-
+#include <iostream>
 class Complex {
 private:
 	double real, imag;
@@ -24,4 +24,24 @@ public:
 	// Prints the complex number
 	void show_compl() const;
 
+	// Prints the complx number in exponential form
+	void show_exp() const;
+
+	// Add two complex numbers and returns the result
+	Complex add(Complex nr) const;
+
+	// Multiplies two complex numbers and returns the result
+	Complex mult(Complex nr) const;
+
+	// Divides two complex numbers and returns the result
+	Complex quot(Complex nr) const;
+
+	// Returns the absolute value of a complex number
+	double abs() const;
+
+	// Transforms the complex number in it's polar form
+	void compute_polar();
+
+	/* Overloads the operator <<
+	friend std::ostream& operator<< (std::ostream& out, Complex& c);*/
 };
